@@ -36,11 +36,17 @@ export const Menu = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     border-radius: 8px;
     border: 0 none;
     background-color: ${({ theme }) => theme.COLORS.ORANGE};
     width: 207px;
     height: 48px;
+  }
+
+  a {
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 `;

@@ -1,4 +1,4 @@
-import { Container, Form } from "./styles";
+import { Container, Form, NewInput, RowForm } from "./styles";
 
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
@@ -7,6 +7,7 @@ import { Textarea } from "../../components/Textarea";
 import { NoteItem } from "../../components/Noteitem";
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 
 export function New() {
   return (
@@ -16,26 +17,33 @@ export function New() {
       <main>
         <Form>
           <header>
-            <h1>Criar nota</h1>
-            <Link to="/">Voltar</Link>
+            <Link to="/" className="voltar">
+              <FiArrowLeft /> Voltar
+            </Link>
+            <h2>Novo Filme</h2>
           </header>
 
-          <Input placeholder="Título" />
+          <RowForm>
+            <NewInput>
+              <Input placeholder="Título" />
+            </NewInput>
+            <NewInput>
+              <Input placeholder="Sua Nota (de 0 a 5)" />
+            </NewInput>
+          </RowForm>
           <Textarea placeholder="Observações" />
 
-          <Section title="Links úteis">
-            <NoteItem value="https://rocketseat.com.br" />
-            <NoteItem placeholder="Novo link" isNew />
-          </Section>
-
           <Section title="Marcadores">
-            <div className="tags">
+            <RowForm className="marcadores">
               <NoteItem value="React" />
-              <NoteItem isNew placeholder="Nova tag" />
-            </div>
+              <NoteItem placeholder="Novo link" isNew />
+            </RowForm>
           </Section>
 
-          <Button title="Salvar" />
+          <RowForm>
+            <Button title="Excluir Filmes" className="excluir" />
+            <Button title="Salvar" />
+          </RowForm>
         </Form>
       </main>
     </Container>

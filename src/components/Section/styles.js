@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 123px;
-  margin: 28px 0;
+  margin-top: 40px;
 
   > h2 {
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    font-size: 24px;
-    background-color: blue;
+    color: ${({ theme }) => theme.COLORS.GRAY_200};
+    font-size: 20px;
+    font-weight: 400;
   }
 `;
+
+// background-color: ${({ theme }) => theme.COLORS.BLACK_900};

@@ -4,6 +4,7 @@ export default {
     BACKGROUND_800: "#312E38", // tag
     BACKGROUND_700: "#3E3B47",
 
+    BLACK_900: "#0D0C0F",
     WHITE: "#F4EDE8",
     ORANGE: "#FF859B", //Rosa
 
