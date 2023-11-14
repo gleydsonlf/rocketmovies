@@ -12,41 +12,56 @@ export const Container = styled.div`
   > main {
     grid-area: content;
     overflow-y: scroll;
-    padding: 64px 0;
-  }
-`;
+    margin: 0 123px;
+    padding-right: 10px;
 
-export const Links = styled.ul`
-  list-style: none;
-
-  > li {
-    margin-top: 12px;
-  }
-
-  a {
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    margin-top: 40px;
   }
 `;
 
 export const Content = styled.div`
-  max-width: 550px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-
-  > button:first-child {
-    align-self: end;
+  > a:first-child {
+    color: ${({ theme }) => theme.COLORS.ORANGE};
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
-  h1 {
+  h2 {
     font-size: 36px;
-    font-weight: 500;
-    padding-top: 64px;
+    font-weight: 400;
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    > img {
+      width: 130px;
+      height: 20px;
+      margin-top: 5px;
+    }
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 24px 0 40px 0;
+
+    > svg {
+      margin: 0 0px 0 15px;
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
   }
 
   p {
     font-size: 16px;
-    margin-top: 16px;
+    margin-top: 40px;
     text-align: justify;
   }
 `;

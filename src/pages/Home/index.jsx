@@ -19,9 +19,17 @@ export function Home() {
       </Menu>
 
       <Content>
-        <Card />
-        <Card />
-        <Card />
+        <Link to="/details/:id">
+          <Card />
+        </Link>
+
+        <Link to="/details/:id">
+          <Card />
+        </Link>
+
+        <Link to="/details/:id">
+          <Card />
+        </Link>
       </Content>
     </Container>
   );

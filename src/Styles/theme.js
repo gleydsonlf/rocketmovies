@@ -7,6 +7,7 @@ export default {
     BLACK_900: "#0D0C0F",
     WHITE: "#F4EDE8",
     ORANGE: "#FF859B", //Rosa
+    TAG: "#282124", //tags
 
     GRAY_50: "E5E5E5", // texto das Tags
     GRAY_100: "#948F99", // texto input

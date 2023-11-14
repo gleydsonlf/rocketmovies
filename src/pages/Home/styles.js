@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: grid;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   grid-template-columns: 100%;
   grid-template-rows: 105px 90px auto;
   grid-template-areas:
@@ -20,6 +20,10 @@ export const Content = styled.div`
   padding-right: 10px;
   margin-top: 40px;
   padding-bottom: 100px;
+
+  a {
+    color: white;
+  }
 `;
 
 export const Menu = styled.div`
